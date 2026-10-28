@@ -91,410 +91,336 @@
 						<div class="page__title">Թեստ 42</div>
 						<div id="timer" class="exam-timer">30:00</div>
 
+						<script>
+							const questions = [
+								{
+									number: 61,
+									question: 'Հետադարձ է համարվում',
+									answers: [
+										'Տրանսպորտային միջոցը հանդիպակաց ուղղությամբ վարելը։',
+										'Տրանսպորտային միջոցի շարժման ուղղությունը հանդիպակաց ուղղությամբ փոխելու նպատակով իրականացվող մանևրը։',
+									],
+									correct: [2],
+									images: [],
+									page: 14,
+									image_urls: [],
+									source_group: 2,
+								},
+								{
+									number: 14,
+									question:
+										'«Ճանապարհային երթեւեկության անվտանգության ապահովման մասին» ՀՀ օրենքի համաձայն՝ անբավարար տեսանելիություն է համարվում',
+									answers: [
+										'Ճանապարհի տեսանելիության հեռավորությունը՝ օրվա մութ ժամանակ։',
+										'Ճանապարհի տեսանելիության հեռավորությունը բնակավայրերում՝ երթեւեկելի մասի արհեստական լուսավորվածության բացակայության պայմաններում։',
+										'Մառախուղի, անձրեւի, ձյունաթափի եւ (կամ) ճանապարհային երթեւեկության անվտանգության ապահովման համար այլ անբարենպաստ եղանակի պայմաններում, ճանապարհի տեսանելիությունը եւ (կամ) մինչեւ 300 մետր տեսանելիության հեռավորությունը։',
+									],
+									correct: [3],
+									images: [],
+									page: 3,
+									image_urls: [],
+									source_group: 2,
+								},
+								{
+									number: 3,
+									question:
+										'Տրանսպորտային միջոցների շահագործումն արգելվում է, եթե',
+									answers: [
+										'Առկա են ղեկային կառավարման դետալների ու հանգույցների` կառուցվածքով չնախատեսված տեղաշարժեր կամ պարուրակային միացումները ձգված չեն։',
+										'Բեռնատար ավտոմոբիլում բացակայում է կրակմարիչը։',
+										'Երկու դեպքում էլ։',
+									],
+									correct: [3],
+									images: [],
+									page: 1,
+									image_urls: [],
+									source_group: 3,
+								},
+								{
+									number: 27,
+									question:
+										'Կողային կցորդով մոտոցիկլների շահագործումն արգելվում է, եթե',
+									answers: [
+										'Բացակայում է կառուցվածքով նախատեսված թամբի վրայի ուղեւորի համար լայնակի բռնատեղը։',
+										'Դողերի պահպանաշերտի մնացորդային բարձրությունը կազմում է 0.6 մմ։',
+										'Բացակայում է բժշկական դեղատուփը։',
+										'Թվարկած բոլոր դեպքերում։',
+									],
+									correct: [4],
+									images: [],
+									page: 5,
+									image_urls: [],
+									source_group: 3,
+								},
+								{
+									number: 57,
+									question:
+										'Խաչմերուկը համարվում է կարգավորվող, եթե երթեւեկության հերթականությունը որոշվում է',
+									answers: [
+										'Միայն լուսացույցի ազդանշաններով։',
+										'Միայն կարգավորողի ազդանշաններով։',
+										'Երկու դեպքում էլ։',
+									],
+									correct: [3],
+									images: [],
+									page: 13,
+									image_urls: [],
+									source_group: 9,
+								},
+								{
+									number: 158,
+									question:
+										'Նշվածներից ո՞ր ուղղությամբ է թույլատրված երթևեկությունը։',
+									answers: ['Միայն B', 'Միայն A և B', 'Միայն B և C', 'Բոլոր'],
+									correct: [4],
+									images: ['group-04-q158.jpg'],
+									page: 67,
+									image_urls: ['images/group-04-q158.jpg'],
+									source_group: 4,
+								},
+								{
+									number: 55,
+									question:
+										'Տրանսպորտային միջոցները խաչմերուկը կանցնեն հետեւյալ հերթականությամբ՝',
+									answers: [
+										'Բեռնատար ավտոմոբիլը, տրամվայը եւ ավտոբուսը, մոտոցիկլը եւ թեթեւ մարդատար ավտոմոբիլը։',
+										'Տրամվայը եւ ավտոբուսը, մոտոցիկլը եւ թեթեւ մարդատար ավտոմոբիլը, բեռնատար ավտոմոբիլը։',
+									],
+									correct: [1],
+									images: ['group-05-q055.jpg'],
+									page: 28,
+									image_urls: ['images/group-05-q055.jpg'],
+									source_group: 5,
+								},
+								{
+									number: 77,
+									question:
+										'Լուսացույցի կանաչ ազդանշանի միացման դեպքում պարտավոր ենք',
+									answers: [
+										'համոզվել, որ հետիոտնային անցման չերևացող մասում չկան անցումը չավարտած հետիոտներ:',
+										'լուսացույցի ազդանշանի համաձայն անմիջապես սկսել երթևեկությունը:',
+									],
+									correct: [1],
+									images: ['group-06-q077.jpg'],
+									page: 31,
+									image_urls: ['images/group-06-q077.jpg'],
+									source_group: 6,
+								},
+								{
+									number: 5,
+									question:
+										'Վերադասավորումից առաջ նախազգուշացնող ազդանշանը պետք է տրվի',
+									answers: [
+										'Անմիջապես մանեւրը սկսելուց առաջ։',
+										'Անմիջապես մանեւրն սկսելուց հետո։',
+										'Նախօրոք՝ մինչեւ մանեւրը սկսելը։',
+									],
+									correct: [3],
+									images: [],
+									page: 1,
+									image_urls: [],
+									source_group: 9,
+								},
+								{
+									number: 116,
+									question:
+										'Թույլատրվո՞ւմ է նշված իրադրությունում հետընթաց կատարել՝ աջ շրջադարձով բակ մտնելու համար։',
+									answers: [
+										'Այո, եթե չենք խոչընդոտի ընդհանուր օգտագործման տրանսպորտային միջոցների երթևեկությունը',
+										'Ոչ',
+									],
+									correct: [2],
+									page: 42,
+									images: ['q116.jpg'],
+									image_urls: ['images/q116.jpg'],
+									source_group: 1,
+								},
+								{
+									number: 114,
+									question:
+										'Թույլատրվո՞ւմ է ուղևոր նստեցնելու նպատակով կանգառ կատարել նշված վայրում։',
+									answers: ['Այո', 'Ոչ'],
+									correct: [1],
+									images: ['group-04-q114.jpg'],
+									page: 53,
+									image_urls: ['images/group-04-q114.jpg'],
+									source_group: 4,
+								},
+								{
+									number: 105,
+									question: 'Այս եռանկյունաձև գծանշումը տեղեկացնում է',
+									answers: [
+										'Վտանգավոր շրջադարձին մոտենալու մասին։',
+										'Ճանապարհը զիջելու տեղին մոտենալու մասին։',
+										'Մեքենան կանգնեցնելու տեղին մոտենալու մասին։',
+									],
+									correct: [2],
+									images: ['group-07-q105.jpg'],
+									page: 42,
+									image_urls: ['images/group-07-q105.jpg'],
+									source_group: 7,
+								},
+								{
+									number: 33,
+									question:
+										'Թույլատրվու՞մ է արդյոք ճկուն կամ կոշտ կցիչով քարշակման դեպքում մարդկանց փոխադրումը քարշակվող մեխանիկական տրանսպորտային միջոցում։',
+									answers: [
+										'Թույլատրվում է ավտոբուսում եւ տրոլեյբուսում',
+										'Թույլատրվում է բեռնատար ավտոմոբիլի խցիկում եւ թեթեւ մարդատար ավտոմոբիլում',
+										'Թույլատրվում է բեռնատար ավտոմոբիլի թափքում եւ թեթեւ մարդատար ավտոմոբիլում',
+										'Արգելվում է',
+									],
+									correct: [2],
+									images: [],
+									page: 7,
+									image_urls: [],
+									source_group: 8,
+								},
+								{
+									number: 98,
+									question:
+										'Գլխավոր ճանապարհով աջ շրջադարձ կատարելիս ազդանշան տալը',
+									answers: [
+										'պարտադիր է։',
+										'պարտադիր է, միայն օրվա մութ ժամանակ։',
+										'պարտադիր չէ։',
+									],
+									correct: [1],
+									images: ['group-09-q098.jpg'],
+									page: 28,
+									image_urls: ['images/group-09-q098.jpg'],
+									source_group: 9,
+								},
+								{
+									number: 50,
+									question:
+										'Նշաններից ո՞րն է տեղադրվում տրանսպորտային միջոցների առջեւի եւ ետեւի կողմերում` երեխաների կազմակերպված խմբեր տեղափոխելիս։',
+									answers: ['1', '2', '3', '4'],
+									correct: [1],
+									images: ['group-04-q050.jpg'],
+									page: 25,
+									image_urls: ['images/group-04-q050.jpg'],
+									source_group: 4,
+								},
+								{
+									number: 18,
+									question: 'Խաչմերուկն առաջինը կանցնի',
+									answers: [
+										'Կանաչ ավտոմոբիլը։',
+										'Կարմիր ավտոմոբիլը։',
+										'Կապույտ ավտոմոբիլը։',
+									],
+									correct: [1],
+									images: ['group-05-q018.jpg'],
+									page: 9,
+									image_urls: ['images/group-05-q018.jpg'],
+									source_group: 5,
+								},
+								{
+									number: 35,
+									question:
+										'Բնակավայրերում, յուրաքանչյուր ուղղությամբ մեկ երթեւեկելի գոտի ունեցող եւ մեջտեղում տրամվայի գծեր չունեցող ճանապարհների ձախ կողմում կանգառն ու կայանումը',
+									answers: ['Թույլատրվում է։', 'Արգելվում է։'],
+									correct: [1],
+									images: [],
+									page: 16,
+									image_urls: [],
+									source_group: 7,
+								},
+								{
+									number: 38,
+									question: 'Ձայնային ազդանշանները կարող են կիրառվել միայն',
+									answers: [
+										'Բնակավայրերում՝ վազանց կատարելու մտադրության մասին մյուս վարորդներին նախազգուշացնելու համար։',
+										'Երբ դա անհրաժեշտ է ճանապարհատրանսպորտային պատահարը կանխելու համար',
+										'Երկու դեպքում էլ',
+									],
+									correct: [2],
+									images: [],
+									page: 10,
+									image_urls: [],
+									source_group: 9,
+								},
+								{
+									number: 14,
+									question:
+										'Ո՞ր տրանսպորտային միջոցներին է թույլատրվում երթեւեկությունը։',
+									answers: [
+										'Դեղին եւ կարմիր ավտոմոբիլներին',
+										'Կանաչ, կարմիր եւ սպիտակ ավտոմոբիլներին',
+										'Սպիտակ եւ կանաչ ավտոմոբիլներին',
+									],
+									correct: [1],
+									images: ['group-06-q014.jpg'],
+									page: 6,
+									image_urls: ['images/group-06-q014.jpg'],
+									source_group: 6,
+								},
+								{
+									number: 21,
+									question:
+										'Վթարի դեպքում ավտոմեքենայից տուժածին պետք է տեղափոխել, եթե',
+									answers: [
+										'Տուժածն ունի լուրջ վնասվածքներ։',
+										'Դեպքի վայրը վտանգավոր է, օրինակ` պայթյունի վտանգ կա։',
+										'Մեքենայի վրա ընկած է հոսանքի հաղորդալար։',
+									],
+									correct: [2],
+									images: [],
+									page: 4,
+									image_urls: [],
+									source_group: 10,
+								},
+							]
+						</script>
+
 						<div class="survey">
-							<div class="question">
-								<h3>
-									1. «Ճանապարհային երթևեկության անվտանգության ապահովման մասին»
-									ՀՀ օրենքի համաձայն` ազգային վարորդական վկայականները տրվում են`
-								</h3>
-								<form>
-									<label
-										><input type="radio" name="q1" /> Մինչև 5 տարի
-										ժամանակով:</label
-									><br />
-									<label
-										><input type="radio" name="q1" /> Մինչև 10 տարի
-										ժամանակով:</label
-									><br />
-									<label
-										><input type="radio" name="q1" /> Մինչև 20 տարի
-										ժամանակով:</label
-									><br />
-									<label><input type="radio" name="q1" /> Անժամկետ:</label>
-								</form>
-								<button class="confirm" data-correct="1">Պատասխանել</button>
-							</div>
+							<script>
+								const container = document.querySelector('.survey')
 
-							<div class="question">
-								<h3>2. Քանի՞ երթևեկության գոտիի կա այս երթևեկելի մասում</h3>
-								<img src="img/d2_image-001.jpg" alt="Question 2" />
-								<form>
-									<label><input type="radio" name="q2" /> Մեկ</label><br />
-									<label><input type="radio" name="q2" /> Երկու</label><br />
-									<label><input type="radio" name="q2" /> Երեք</label>
-								</form>
-								<button class="confirm" data-correct="1">Պատասխանել</button>
-							</div>
+								container.innerHTML = questions
+									.map(
+										(q, i) => `
+			<div class="question">
+				<h3>${i + 1}. ${q.question}</h3>
 
-							<div class="question">
-								<h3>
-									3. Տրանսպորտային միջոցների շահագործումն արգելվում է, եթե՝
-								</h3>
-								<form>
-									<label
-										><input type="radio" name="q3" /> Չի գործում պնևմատիկ
-										արգելակային հաղորդակի ճնշաչափը:</label
-									><br />
-									<label
-										><input type="radio" name="q3" /> Ավտոբուսի դողերի
-										պահպանաշերտի մնացորդային բարձրությունը կազմում է 1.6
-										մմ:</label
-									><br />
-									<label
-										><input type="radio" name="q3" /> Երկու դեպքում էլ:</label
-									>
-								</form>
-								<button class="confirm" data-correct="2">Պատասխանել</button>
-							</div>
+				${q.images
+					.map(
+						image => `
+							<img src="./images/${image}" alt="" />
+						`,
+					)
+					.join('')}
 
-							<div class="question">
-								<h3>
-									4. Տրանսպորտային միջոցների շահագործումն արգելվում է, եթե`
-								</h3>
-								<form>
-									<label
-										><input type="radio" name="q4" /> Շարժիչն աշխատում է
-										ընդհատումներով:</label
-									><br />
-									<label
-										><input type="radio" name="q4" /> Հետին հակամառախուղային
-										լապտերիկները միացված չեն արգելակումն ազդարարող լուսային
-										սարքերին:</label
-									><br />
-									<label
-										><input type="radio" name="q4" /> Չեն աշխատում տրանսպորտային
-										միջոցի կառուցվածքով նախատեսված ապակեողողիչները:</label
-									><br />
-									<label
-										><input type="radio" name="q4" /> Թվարկած բոլոր
-										դեպքերում:</label
-									>
-								</form>
-								<button class="confirm" data-correct="2">Պատասխանել</button>
-							</div>
+				<form>
+					${q.answers
+						.map(
+							(answer, index) => `
+								<label>
+									<input
+										type="radio"
+										name="q${q.number}"
+										value="${index + 1}"
+									/>
+									${answer}
+								</label>
+								<br />
+							`,
+						)
+						.join('')}
+				</form>
 
-							<div class="question">
-								<h3>
-									5. Ո՞ր տրանսպորտային միջոցի վարորդն ունի առաջնահերթ
-									երթևեկության իրավունք:
-								</h3>
-								<img src="img/d1_42.jpg" alt="Question 5" />
-								<form>
-									<label
-										><input type="radio" name="q5" /> Ավտոբուսի վարորդը:</label
-									><br />
-									<label
-										><input type="radio" name="q5" /> Թեթև մարդատար ավտոմոբիլի
-										վարորդը:</label
-									>
-								</form>
-								<button class="confirm" data-correct="1">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>6. Այս ճանապարհային նշանը ցույց է տալիս`</h3>
-								<img src="img/d4_41.jpg" alt="Question 6" />
-								<form>
-									<label
-										><input type="radio" name="q6" /> Միջանցիկ անցում չունեցող
-										ճանապարհ:</label
-									><br />
-									<label
-										><input type="radio" name="q6" /> Երթևեկության ուղղությունը
-										դեպի բնակավայրում գտնվող օբյեկտ:</label
-									><br />
-									<label
-										><input type="radio" name="q6" /> Թափառքի գոտու կամ վերելքի
-										վրա լրացուցիչ գոտու վերջը:</label
-									>
-								</form>
-								<button class="confirm" data-correct="0">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>7. Խաչմերուկը վերջինը կանցնի`</h3>
-								<img src="img/d5_8.jpg" alt="Question 7" />
-								<form>
-									<label
-										><input type="radio" name="q7" /> Կանաչ ավտոմոբիլը:</label
-									><br />
-									<label
-										><input type="radio" name="q7" /> Կապույտ ավտոմոբիլը:</label
-									><br />
-									<label
-										><input type="radio" name="q7" /> Կարմիր ավտոմոբիլը:</label
-									>
-								</form>
-								<button class="confirm" data-correct="2">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									8. Ո՞ր տրանսպորտային միջոցներին է թույլատրվում երթևեկությունը:
-								</h3>
-								<img src="img/d6_7.jpg" alt="Question 8" />
-								<form>
-									<label
-										><input type="radio" name="q8" /> Դեղին և կարմիր
-										ավտոմոբիլներին:</label
-									><br />
-									<label
-										><input type="radio" name="q8" /> Կանաչ, կարմիր և սպիտակ
-										ավտոմոբիլներին:</label
-									><br />
-									<label
-										><input type="radio" name="q8" /> Սպիտակ և կանաչ
-										ավտոմոբիլներին:</label
-									>
-								</form>
-								<button class="confirm" data-correct="0">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									9. Ինչի՞ մասին է տեղեկացնում թեթև մարդատար ավտոմոբիլի վարորդի
-									կողմից ձեռքով տրված ազդանշանը:
-								</h3>
-								<img src="img/d9_75.jpg" alt="Question 9" />
-								<form>
-									<label
-										><input type="radio" name="q9" /> Շրջադարձ է կատարում դեպի
-										աջ:</label
-									><br />
-									<label
-										><input type="radio" name="q9" /> Շարունակում է
-										երթևեկությունը ուղիղ:</label
-									><br />
-									<label><input type="radio" name="q9" /> Արգելակում է:</label>
-								</form>
-								<button class="confirm" data-correct="2">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									10. Տեսանելիության բացակայության պատճառով հետընթաց կատարելիս
-									վարորդը պետք է
-								</h3>
-								<form>
-									<label
-										><input type="radio" name="q10" /> Ձայնային ազդանշան
-										տա</label
-									><br />
-									<label
-										><input type="radio" name="q10" /> Միացնի վթարային լուսային
-										ազդանշանը</label
-									><br />
-									<label
-										><input type="radio" name="q10" /> Դիմի այլ անձանց
-										օգնությանը</label
-									>
-								</form>
-								<button class="confirm" data-correct="2">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									11. Ո՞ր տրանսպորտային միջոցների վրա չի տարածվում կանգառն
-									արգելող նշանի ազդեցությունն այս դեպքում
-								</h3>
-								<img src="img/d4_image-161.jpg" alt="Question 11" />
-								<form>
-									<label
-										><input type="radio" name="q11" /> Թեթև մարդատար տաքսի
-										ավտոմոբիլների</label
-									><br />
-									<label
-										><input type="radio" name="q11" /> Միայն «Հաշմանդամ»
-										ճանաչման նշանով կահավորված մոտոսայլակների և ավտոմոբիլների
-										վրա</label
-									><br />
-									<label
-										><input type="radio" name="q11" /> Բոլոր նշվածների</label
-									>
-								</form>
-								<button class="confirm" data-correct="1">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									12. Այս հորիզոնական ճանապարհային գծանշումը ցույց է տալիս`
-								</h3>
-								<img src="img/d7_11.jpg" alt="Question 12" />
-								<form>
-									<label
-										><input type="radio" name="q12" /> Երթևեկելի մասի նեղացում,
-										որտեղ նվազում է երթևեկության գոտիների քանակը տվյալ
-										ուղղությամբ:</label
-									><br />
-									<label
-										><input type="radio" name="q12" /> Այն տեղը, որտեղ վարորդը
-										պետք է անհրաժեշտության դեպքում կանգ առնի`հատվող ճանապարհով
-										երթևեկող տրանսպորտային միջոցներին ճանապարհը զիջելու
-										համար:</label
-									><br />
-									<label
-										><input type="radio" name="q12" /> Մոտեցում` կանգառն
-										արգելված է տեղին:</label
-									>
-								</form>
-								<button class="confirm" data-correct="1">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									13. Ինչպիսի՞ առավելագույն արագությամբ կարող է իրականացվել
-									քարշակումը տվյալ պայմաններում:
-								</h3>
-								<img src="img/d8_2.jpg" alt="Question 13" />
-								<form>
-									<label><input type="radio" name="q13" /> 30 կմ/ժ:</label
-									><br />
-									<label><input type="radio" name="q13" /> 50 կմ/ժ:</label
-									><br />
-									<label><input type="radio" name="q13" /> 70 կմ/ժ:</label
-									><br />
-									<label><input type="radio" name="q13" /> 80 կմ/ժ:</label>
-								</form>
-								<button class="confirm" data-correct="1">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									14. Կարմիր գույնի առկայծող փարոսիկ միացրած, կանգնած վիճակում
-									գտնվող տրանսպորտային միջոցին մոտենալիս` տվյալ ուղղությամբ
-									երթևեկող տրանսպորտային միջոցների վարորդները պետք է`
-								</h3>
-								<form>
-									<label
-										><input type="radio" name="q14" /> Կանգ առնեն և շարունակեն
-										երթևեկթյունը միայն թույլտվություն ստանալուց հետո:</label
-									><br />
-									<label
-										><input type="radio" name="q14" /> Իջեցնեն արագությունը,
-										որպեսզի անհրաժեշտության դեպքում հնարավորություն ունենան
-										անմիջապես կանգ առնել:</label
-									>
-								</form>
-								<button class="confirm" data-correct="0">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									15. Ի՞նչ է ցույց տալիս լրացուցիչ տեղեկատվության ցուցանակը
-								</h3>
-								<img src="img/d4_image-102.jpg" alt="Question 15" />
-								<form>
-									<label
-										><input type="radio" name="q15" /> նշանից մինչև խաչմերուկ
-										եղած հեռավորությունը, երբ խաչմերուկից անմիջապես առաջ
-										տեղադրված է «Զիջեք ճանապարհը» նշանը</label
-									><br />
-									<label
-										><input type="radio" name="q15" /> նշանից մինչև խաչմերուկ
-										եղած հեռավորությունը, երբ խաչմերուկից անմիջապես առաջ
-										տեղադրված է «Երթևեկությունն առանց կանգառի արգելված է»
-										նշանը</label
-									><br />
-									<label
-										><input type="radio" name="q15" /> Սահմանային անցակետի
-										գտնվելու վայրը</label
-									>
-								</form>
-								<button class="confirm" data-correct="1">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									16. Երբ վարորդը չի կարող որոշել ճանապարհի ծածկույթի
-									առկայությունը (օրվա մութ ժամանակ, ցեխ, ձյուն և այլն), և
-									բացակայում են առավելության նշանները, ապա
-								</h3>
-								<form>
-									<label
-										><input type="radio" name="q16" /> Նա պետք է համարի, որ
-										գտնվում է երկրորդական ճանապարհի վրա</label
-									><br />
-									<label
-										><input type="radio" name="q16" /> Նա պետք է առաջնորդվի
-										հավասարազոր խաչմերուկի անցման կանոններով:</label
-									>
-								</form>
-								<button class="confirm" data-correct="0">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>17. Ցանկապատերի ուղղահայաց գծանշումը տեղեկացնում է</h3>
-								<img src="img/d7_image-094.jpg" alt="Question 17" />
-								<form>
-									<label
-										><input type="radio" name="q17" /> Երկաթուղային գծանցին
-										մոտենալու մասին</label
-									><br />
-									<label
-										><input type="radio" name="q17" /> Վտանգավոր խաչմերուկին
-										մոտենալու մասին</label
-									><br />
-									<label
-										><input type="radio" name="q17" /> Ճանապարհի վտանգավոր
-										հատվածով երթևեկության մասին</label
-									>
-								</form>
-								<button class="confirm" data-correct="2">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									18. Ձախ շրջադարձ կատարելիս այս իրավիճակում ազդանշան տալը
-								</h3>
-								<img src="img/d9_image-044.jpg" alt="Question 18" />
-								<form>
-									<label><input type="radio" name="q18" /> Պարտադիր է</label
-									><br />
-									<label><input type="radio" name="q18" /> Պարտադիր չէ</label>
-								</form>
-								<button class="confirm" data-correct="0">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>19. Կանաչ ազդանշանի միանալուց հետո պարտավոր ենք</h3>
-								<img src="img/d6_image-072.jpg" alt="Question 19" />
-								<form>
-									<label
-										><input type="radio" name="q19" /> Համոզվել, որ հետիոտնային
-										անցման չերևացող մասում չկան անցումը չավարտած
-										հետիոտներ</label
-									><br />
-									<label
-										><input type="radio" name="q19" /> Լուսացույցի ազդանշանի
-										համաձայն անմիջապես սկսել շարժումը</label
-									>
-								</form>
-								<button class="confirm" data-correct="0">Պատասխանել</button>
-							</div>
-
-							<div class="question">
-								<h3>
-									20. Գիտակցության կորստի ժամանակ` շնչառության և արյան
-									շրջանառության առկայության դեպքում, առաջին օգնություն
-									ցուցաբերելու նպատակով Ի՞նչ դիրքով պառկեցնել տուժածին:
-								</h3>
-								<form>
-									<label
-										><input type="radio" name="q20" /> Մեջքի վրա` գլխի տակ
-										դնելով գլանակ</label
-									><br />
-									<label
-										><input type="radio" name="q20" /> Մեջքի վրա` ոտքերը տարածած
-										վիճակում</label
-									><br />
-									<label
-										><input type="radio" name="q20" /> Տուժածին տալ կայուն կողքի
-										շրջված դիրք այնպես, որ ծալված ծնկները հպվեն գետնին, իսկ
-										վերևում գտնվող ձեռքը գտնվի այտի տակ:</label
-									>
-								</form>
-								<button class="confirm" data-correct="2">Պատասխանել</button>
-							</div>
+				<button
+					class="confirm"
+		data-correct="${q.correct.map(n => n - 1).join(',')}"
+				>
+					Պատասխանել
+				</button>
+			</div>
+		`,
+									)
+									.join('')
+							</script>
 						</div>
 						<div style="text-align: center; margin: 40px 0">
 							<button
